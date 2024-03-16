@@ -1,0 +1,48 @@
+.top {
+    height: fit-content;
+}
+
+.bot {
+    width: fit-content;
+    height: 600px;
+}
+
+img {
+    height: 200px;
+    width: auto;
+    position: relative;
+}
+
+.top img {
+    top: 0;
+    left: 0;
+    animation-name: move-right;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.bot img {
+    top: 0;
+    left: 0;
+    animation-name: move-bot;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-right {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 500px;
+    }
+}
+
+@keyframes move-bot {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 500px;
+    }
+}
